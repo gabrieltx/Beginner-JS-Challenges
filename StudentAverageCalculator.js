@@ -37,13 +37,13 @@ function calculateaverage(students) {
 const averageA = calculateaverage(classA)
 const averageB = calculateaverage(classB)
 
-function SendMsg(average, Turma) {
+function SendMsg(average, Class) {
     
     if (average > 5) {
-        console.log(`The average of ${Turma} was ${average}, congrats!`)
+        console.log(`The average of ${Class} was ${average}, congrats!`)
     }
     else {
-        console.log(`The average of ${Turma} was ${average}`)
+        console.log(`The average of ${Class} was ${average}`)
     }
 }
 
@@ -70,7 +70,7 @@ function studentsflunked(students) {
     }
 }
 
-SendMsg(averageA, 'TurmaA')
-SendMsg(averageB, 'TurmaB')
+SendMsg(averageA, 'ClassA')
+SendMsg(averageB, 'ClassB')
 studentsflunked(classA)
 studentsflunked(classB)
